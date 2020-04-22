@@ -1,17 +1,21 @@
 //creo una sequenza di numeri da 1 a 100
-for (var i=1; i<=100; i++) {
-    var numero_corrente = i;
-    //creo una regola che mi permetta di ottenere il resto divideno per i numeri indicati
-    var resto_multiplo_tre = numero_corrente % 3;
-    var resto_multiplo_cinque = numero_corrente % 5;
-    //creo la condizione e stampo in pagina quella vera
+for ( var i = 1; i <= 100; i++) {
+    //devo individuare i valori che sono multipli di 3
+    var resto_multiplo_tre = i % 3;
+    //devo individuare i valori che sono multipli di 5
+    var resto_multiplo_cinque = i % 5;
+    //creo la condizione per stampare in pagina
     if ((resto_multiplo_tre == 0) && (resto_multiplo_cinque == 0)) {
-    console.log(numero_corrente + " BuzzFizz");
-    } else if (resto_multiplo_cinque == 0) {
-        console.log(numero_corrente + " Buzz");
+        //affianco "fizzbuzz" ai multipli di tre e cinque
+        console.log(i + " " + "FizzBuzz");
     } else if (resto_multiplo_tre == 0) {
-        console.log(numero_corrente + " Buzz");
+        //affianco "fizz" ai multipli di tre
+        console.log(i + " " + "Fizz");
+    } else if (resto_multiplo_cinque == 0) {
+        //affianco "buzz" ai multipli di cinque
+        console.log(i + " " + "Buzz");
     } else {
-        console.log(numero_corrente);
+        //stampo i valori che non rientrano nelle condizioni precedenti
+        console.log(i);
     }
 }
