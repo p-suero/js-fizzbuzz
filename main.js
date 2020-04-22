@@ -6,14 +6,14 @@ for ( var i = 1; i <= 100; i++) {
     var resto_multiplo_cinque = i % 5;
     //creo la condizione per stampare in pagina
     if ((resto_multiplo_tre == 0) && (resto_multiplo_cinque == 0)) {
-        //affianco "fizzbuzz" ai multipli di tre e cinque
-        console.log(i + " " + "FizzBuzz");
+        //sostituisco "fizzbuzz" ai multipli di tre e cinque
+        console.log("FizzBuzz");
     } else if (resto_multiplo_tre == 0) {
-        //affianco "fizz" ai multipli di tre
-        console.log(i + " " + "Fizz");
+        //sostituisco "fizz" ai multipli di tre
+        console.log("Fizz");
     } else if (resto_multiplo_cinque == 0) {
-        //affianco "buzz" ai multipli di cinque
-        console.log(i + " " + "Buzz");
+        //sostituisco "buzz" ai multipli di cinque
+        console.log("Buzz");
     } else {
         //stampo i valori che non rientrano nelle condizioni precedenti
         console.log(i);
